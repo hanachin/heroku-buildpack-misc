@@ -1,0 +1,10 @@
+#!/bin/sh
+
+echo "Release"
+echo $@
+
+cat << EOF
+---
+default_process_types:
+  web: echo HelloWorld
+EOF
